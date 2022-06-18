@@ -1,0 +1,79 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: url("../bg/house1.jpg");
+    background-position: 90% 70%;
+    background-size: cover;
+    color: white;
+    font-family: arial;
+}
+
+input#id-btncadastro{
+    
+
+    display: block; /* colocar os inputs do form um abaixo do outro e não um do lado do outro (inline) como ocorre por padrão.*/
+    height: 35px;
+    width: 250px;
+    margin: 10px;
+    border-radius: 30px;
+    border: 1px solid rgba(0, 195, 255, 0.452);
+    font-size: 16px;
+    padding: 10px 20px; /*10 em cima/baixo e 20 na dir/esq*, ajuda a "deesgrudar o texto de placeholder das bordas do input*/
+    background-color: rgba(255, 255, 255, 0.01); /*0.01 é uma transparência extrema, ou seja, esse branco é quase invisível*/
+    color: white;
+    outline: none; /*ouline é a borda extra que aparece quando clickamos no input*/
+}
+
+input[type=submit]{
+    background-color: rgba(0, 195, 255, 0.452);
+    border: none;
+    cursor: pointer; /*serve para mostrar a mãozinha no ponteiro do mouse ao passar o ponteiro pelo botão*/
+}
+
+
+form{
+    /* background-color: red; */
+    align-content: center;
+}
+
+div#body-form{
+    /* background-color: red; */
+    width: 420px;
+    margin: 150px auto 0px auto; /*centraliando a div do form cima-lado1-baixo-lado2*/
+    
+    
+}
+
+div#body-form h1{
+    text-align: center;
+    padding: 20px;
+}
+
+a{
+    color: rgb(7, 9, 129);
+    text-decoration: none;
+    display: block;
+    text-align: center; /*esse alinhamento só funcionará se o display estiver definido como block e não como inline (default)*/
+}
+
+a:hover{
+    text-decoration: underline;
+    
+    
+}
+
+::-webkit-input-placeholder{
+    color: #fff;
+}
+:-moz-placeholder{ /*Mozilla 4~18*/
+    color: #fff;
+}
+::-moz-placeholder{ /*Mozilla 19+*/
+    color: #fff;
+}
+:-ms-input-placeholder{ /*IE 10+*/
+    color: #fff;
+}
